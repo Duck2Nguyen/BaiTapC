@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main(){
 	printf(" Hours of Precipitation: 3hrs  \t\t Hours of Precipitation: 1hrs \n");
 	printf(" Hours of Rains: 3hrs  \t\t\t Hours of Rains: 1hrs \n\n\n ");
