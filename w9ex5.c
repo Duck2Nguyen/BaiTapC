@@ -27,6 +27,8 @@ int main()
 	int sum;
 	int dem=0;
 	int demG=0,demS=0,demC=0;
+	int lai;
+	int laimax=0;
 	
 	do{
 		printf(" \nLua chon cua ban:");
@@ -65,12 +67,18 @@ int main()
 			scanf("%d",&phauthuat);		
 			sum=hospitalFee(the,ngay,tienthuoc,phauthuat);
 			printf("So tien phai tra la: %d VND \n",sum);
+			lai=ngay*15000+tienthuoc+phauthuat-sum;
+			if(laimax<lai){
+				laimax=lai;
+			}
+			
 			break;
 		case 3:
 			printf("Tong so benh nhan: %d \n",dem);
 			printf("So luong the loai Gold da khai bao: %d \n",demG);
 			printf("So luong the loai Sliver da khai bao: %d \n",demS);
 			printf("So luong the loai Citizen da khai bao: %d \n",demC);			
+			printf("So tien lon nhat dc huong tu bao hiem: %d VND\n",laimax);
 			break;
 		case 4:
 			printf("Goodbye");
