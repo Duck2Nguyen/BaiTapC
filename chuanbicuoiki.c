@@ -39,6 +39,7 @@ int kiemtra(char a[]){
 }
 
 DVD input(DVD dia,int i){
+	while(getchar()!='\n');
 	fflush(stdin);
 	do{
 		printf("\nNhap vao ma so cua dia thu %d (mLLLDDDD): ",i+1);
@@ -94,11 +95,11 @@ void sapxep(DVD dia[],int n){
 void suadoi(DVD a[],int n){
 	char b[9];
 	int i;
-	fflush(stdin);
 	int check;
 	do{
 		
 		do{
+			while(getchar()!='\n');
 			fflush(stdin);
 			printf("\nNhap vao ma so dia (mLLLDDDD): ");
 			gets(b);	
@@ -163,11 +164,13 @@ int main()
 	printf("7.Thoat\n");	
 	
 	do{
+		while(getchar()!='\n');
 		fflush(stdin);		
 		printf("\nLua chon cua ban la: ");
 		scanf("%d",&c);
 		switch(c){
 			case 1:
+				while(getchar()!='\n');
 				fflush(stdin);
 				printf("\nNhap so luong dia can tao:");
 				scanf("%d",&num);
@@ -177,6 +180,7 @@ int main()
 				n=num;
 				break;
 			case 2:
+				while(getchar()!='\n');
 				fflush(stdin);
 				printf("\nNhap so luong dia can tao them:");
 				scanf("%d",&them);
